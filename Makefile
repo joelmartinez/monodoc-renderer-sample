@@ -7,6 +7,12 @@ SampleCodeDocs: SampleCode.dll
 
 SampleCode.tree: update
 	mdoc assemble -o SampleCode SampleCodeDocs
+	mkdir -p monodoc.renderer.sample/bin/Debug
+	mkdir -p monodoc.renderer.sample/bin/Release
+	cp SampleCode.tree monodoc.renderer.sample/bin/Debug/
+	cp SampleCode.tree monodoc.renderer.sample/bin/Release/
+	cp SampleCode.zip monodoc.renderer.sample/bin/Debug/
+	cp SampleCode.zip monodoc.renderer.sample/bin/Release/
 
 build:SampleCode.dll
 update: SampleCodeDocs
