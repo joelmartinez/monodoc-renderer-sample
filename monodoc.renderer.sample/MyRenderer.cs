@@ -12,7 +12,9 @@ namespace monodoc.renderer.sample
 
 		public string Generate(HelpSource hs, string internalId, Dictionary<string, string> context)
 		{
-			throw new NotImplementedException();
+			string sourceText = hs.GetText(internalId);
+
+			return sourceText;
 		}
 	}
 }
