@@ -13,6 +13,8 @@ SampleCode.tree: update
 	cp SampleCode.tree monodoc.renderer.sample/bin/Release/
 	cp SampleCode.zip monodoc.renderer.sample/bin/Debug/
 	cp SampleCode.zip monodoc.renderer.sample/bin/Release/
+	cp SampleCode.source monodoc.renderer.sample/bin/Debug/
+	cp SampleCode.source monodoc.renderer.sample/bin/Release/
 
 build:SampleCode.dll
 update: SampleCodeDocs
