@@ -1,6 +1,9 @@
 
-SampleCode.dll:
-	mcs SampleCode.cs -target:library
+SampleCode.Reference.dll:
+	mcs SampleCode.Reference.cs -target:library
+
+SampleCode.dll: SampleCode.Reference.dll
+	mcs SampleCode.cs -target:library -r:SampleCode.Reference.dll
 
 SampleCodeDocs: SampleCode.dll
 	mdoc update SampleCode.dll -o SampleCodeDocs
